@@ -248,7 +248,7 @@ while option != "0":
         view_all()
     else:
         if option !=0:
-            print("Not a valid option. Please try another.")
+            print("Not a valid option entry. Please try another.")
 
 db.close()
 
