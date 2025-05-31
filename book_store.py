@@ -16,11 +16,12 @@ def view(selection):
 def init_db():
     ''' Initialises the book table. If it already exists then exception is caught and moves on'''
 
-    initial_data = [[3001, "A Tale of Two Cities", "Charles Dickens", 30],
-                    [3002, "Harry Potter and the Philospher's Stone", "J.K. Rowling", 40],
-                    [3003, "The Lion, the Witch and the Wardrobe", "C.S. Lewis", 25],
-                    [3004, "The Lord of the Rings", "J.R.R. Tolkien", 37],
-                    [3005, "Alice in Wonderland", "Lewis Carrol", 12]]
+    initial_data = []
+    #               [[3001, "A Tale of Two Cities", "Charles Dickens", 30],
+    #                [3002, "Harry Potter and the Philospher's Stone", "J.K. Rowling", 40],
+    #                [3003, "The Lion, the Witch and the Wardrobe", "C.S. Lewis", 25],
+    #                [3004, "The Lord of the Rings", "J.R.R. Tolkien", 37],
+    #                [3005, "Alice in Wonderland", "Lewis Carrol", 12]]
     
     try:
         cursor.execute('''CREATE TABLE book(
